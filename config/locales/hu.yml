@@ -1,0 +1,11 @@
+hu:
+  rcng_setting_blocked_roles: "Lezárt jegyhez hozzászólást tiltó szerepkörök"
+  rcng_setting_hint: "A kiválasztott szerepkör(ök)be tartozó felhasználók nem írhatnak és nem szerkeszthetnek megjegyzést lezárt státuszú hibajegynél. Visszanyitott jegyekre ez nem vonatkozik."
+  rcng_error_closed_issue_notes_forbidden: "Lezárt hibajegyhez ebben a szerepkörben nem adhatsz hozzá és nem módosíthatsz megjegyzést."
+  activerecord:
+    errors:
+      models:
+        journal:
+          attributes:
+            notes:
+              rcng_notes_forbidden_on_closed: "nem módosítható lezárt hibajegynél a szerepköröd alapján."
