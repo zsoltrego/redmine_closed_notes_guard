@@ -1,0 +1,11 @@
+en:
+  rcng_setting_blocked_roles: "Roles blocked from commenting on closed issues"
+  rcng_setting_hint: "Users having any of the selected roles will not be able to add or edit notes while the issue is closed. Reopened issues are unaffected."
+  rcng_error_closed_issue_notes_forbidden: "You cannot add or edit notes on a closed issue."
+  activerecord:
+    errors:
+      models:
+        journal:
+          attributes:
+            notes:
+              rcng_notes_forbidden_on_closed: "cannot be changed on a closed issue for your role."
