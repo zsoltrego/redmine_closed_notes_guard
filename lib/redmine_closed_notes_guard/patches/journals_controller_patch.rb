@@ -20,8 +20,8 @@ module RedmineClosedNotesGuard
           user_role_ids = User.current.roles_for_project(issue.project).map(&:id)
 
           if blocked_ids.any? && (user_role_ids & blocked_ids).any?
-            flash[:error] = l(:rcng_error_closed_issue_notes_forbidden)
-            return redirect_back(fallback_location: issue_path(issue), status: 303)
+            render plain: l(:rcng_error_closed_issue_notes_forbidden), status: 403
+            return
           end
         end
 
