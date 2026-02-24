@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-module RedmineClosedNotesGuard
+module ClosedNotesGuard
   module Patches
     module JournalModelPatch
       def self.included(base)
@@ -40,6 +40,6 @@ module RedmineClosedNotesGuard
   end
 end
 
-unless Journal.included_modules.include?(RedmineClosedNotesGuard::Patches::JournalModelPatch)
-  Journal.include RedmineClosedNotesGuard::Patches::JournalModelPatch
+unless Journal.included_modules.include?(ClosedNotesGuard::Patches::JournalModelPatch)
+  Journal.include ClosedNotesGuard::Patches::JournalModelPatch
 end
