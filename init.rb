@@ -5,6 +5,7 @@ Redmine::Plugin.register :closed_notes_guard do
   author 'ZsoltRego'
   description 'Block adding/editing notes on closed issues for selected roles.'
   version '1.0.1'
+  url 'https://github.com/zsoltrego/closed_notes_guard'
   requires_redmine version_or_higher: '6.1.0'
 
   settings default: { 'blocked_role_ids' => [] },
