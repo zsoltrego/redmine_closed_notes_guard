@@ -57,14 +57,25 @@ git clone https://github.com/zsoltrego/closed_notes_guard.git plugins/closed_not
 Migráció (ha van):
 
 ```sh
+# bundle config set --local without 'development test'
+bundle install
 bundle exec rake redmine:plugins:migrate RAILS_ENV=production
 ```
 
 Redmine restart szükséges.
 
+```sh
+touch tmp/restart.txt
+```
+
 ## Eltávolítás
 
 Plugin könyvtár törlése és Redmine restart.
+
+```sh
+rm -rf plugins/closed_notes_guard
+touch tmp/restart.txt
+```
 
 ## Verziókövetés
 
